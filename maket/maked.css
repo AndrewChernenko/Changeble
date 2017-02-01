@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+header {
+    background-color: #6463ff;
+    height: 100px;
+}
+aside {
+    background-color: #ff5f66;
+    width: 100px;
+    display: flex;
+    align-content: flex-end;
+    float: right;
+    flex-basis: 100px;
+}
+news {
+    background-color: #fffb7d;
+    width: 100px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    position: relative;
+    flex-basis: 100px;
+}
+footer {
+    background-color: #74ff69;
+    height: 100px;
+    align-content: flex-end;
+
+}
+.div {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+main {
+    flex: auto;
+}
+
