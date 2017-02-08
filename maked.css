@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0;
+}
+aside {
+    background-color: #333535;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+content {
+    flex-grow: 10;
+}
+ul {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+}
+li {
+    margin-top: 30px;
+}
+li:before {
+    margin-right: 10px;
+}
+
+.main:before {
+    content: url("star.png");
+}
+.about:before {
+    content: url("mail.png");
+}
+.contacts:before{
+    content: url("contacts.png");
+}
+.facebook:before{
+    content: url("document.png");
+}
+.facebook:after{
+    content: url("aeroplane.png");
+}
+#about {
+    display: none;
+}
+@media all and (max-width: 1000px ){
+    li {
+        margin-right: 20px;
+    }
+    .main{
+        content: url("star.png");
+    }
+    .about {
+        content: url("mail.png");
+    }
+    .contacts {
+        content: url("contacts.png");
+    }
+    .facebook {
+        content: url("facebook.png");
+    }
+
+}
+@media all and (max-width: 550px) {
+    body {
+        flex-direction: column;
+
+    }
+
+    ul li {
+        display: inline;
+        margin-right: 25px;
+    }
+
+    aside {
+        flex-basis: 40px;
+    }
+}
+body ul #about:active {
+    #main {
+        display: none;
+    }
+}
+h1, div {
+    margin-left: 10px;
+}
